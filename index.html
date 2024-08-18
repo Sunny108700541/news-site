@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>news app</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+     <nav>
+          <div><a href="#"><img id="imglogo"  src="logotran.png" height="150px" width="250px"></a></div>
+          <div id="listbar">
+               <ul>
+                    <li ><a href="#" class="hover-link nav-item"    id="ipl"    onclick="onNaviteamclick('ipl')">IPL</a></li>
+                    <li ><a href="#" class="hover-link nav-item"    id="finance" onclick="onNaviteamclick('finance')">FINANCE</a></li>
+                    <li ><a href="#" class="hover-link nav-item"    id="politics" onclick="onNaviteamclick('politics')">POLITICS</a></li>
+                    <li ><a href="#" class="hover-link nav-item"    id="technology" onclick="onNaviteamclick('technology')">TECHNOLOGY</a></li>
+               </ul>
+          </div>  <!--list ends-->
+          <div id="search-sec">
+             <input type="text" name="searchbar" placeholder="Eg. science" id="inputbar">  
+               <button id="btn"><a href="#">SEARCH</a></button>   
+          </div>
+     </nav>
+
+     <main>
+          
+          <div id="card-container">
+               <div id="card">
+                    <div id="card-headders">
+                         <img src="https://via.placeholder.com/400x200" alt="no preview">
+                    </div>    <!---headders end-->
+                    <div id="card-content">
+                         <h3 class="news-title" id="news-title">this is the title</h3>
+                         <h6 class="news-source" id="news-source">end gadget 17/08/2024</h6>
+                         <p id="news-description" class="news-description">
+                              Wiktionary has grown beyond a standard dictionary and now includes a thesaurus, 
+                              a rhyme guide, phrase books, language statistics and extensive appendices. 
+                              We aim to include not only the definition of a word,
+                               but also enough information to really understand it. </p>
+                    </div> <!-- card content ends-->
+               </div>  <!-- card end-->
+              
+          </div>  <!-- card-container end-->
+     
+     </main>
+
+     <template id="templatecontainer">
+     <div id="card">
+          <div id="card-headders">
+               <img src="https://via.placeholder.com/400x200" alt="no preview" id="news-img">
+          </div>    <!---headders end-->
+          <div id="card-content">
+               <h3  id="news-title">this is the title</h3>
+               <h6  id="news-source">end gadget 17/08/2024</h6>
+               <p id="news-desc" class="news-description">
+                    Wiktionary has grown beyond a standard dictionary and now includes a thesaurus, 
+                    a rhyme guide, phrase books, language statistics and extensive appendices. 
+                    We aim to include not only the definition of a word,
+                     but also enough information to really understand it. </p>
+          </div> <!-- card content ends-->
+     </div>  <!-- card end-->
+</template>
+
+     
+     <script src="script.js"></script>
+</body>
+</html>
